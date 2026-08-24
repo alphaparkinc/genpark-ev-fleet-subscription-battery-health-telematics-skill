@@ -1,0 +1,41 @@
+{
+  "name": "genpark-ev-fleet-subscription-battery-health-telematics-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Electric vehicle (EV) all-inclusive subscription platform, battery state-of-health (SoH) diagnostics, and second-life energy storage residual valuer.",
+  "author": "genpark",
+  "category": "mobility",
+  "tags": [
+    "ev-subscription",
+    "battery-health",
+    "soh-diagnostics",
+    "second-life-battery",
+    "ever-cars"
+  ],
+  "inputs": {
+    "vehicle_id": {
+      "type": "string"
+    },
+    "odometer_km": {
+      "type": "integer"
+    },
+    "current_soh_pct": {
+      "type": "number"
+    }
+  },
+  "outputs": {
+    "assessment_id": {
+      "type": "string"
+    },
+    "all_inclusive_monthly_subscription_usd": {
+      "type": "number"
+    },
+    "battery_state_of_health_soh_pct": {
+      "type": "number"
+    },
+    "second_life_bess_residual_value_usd": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
